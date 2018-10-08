@@ -4,12 +4,47 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Fun with Giphy</title>
+    <title>Nintendo Giphy </title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-    
+    <div class="container">
+        <div class="row mt-5">
+            <div class="col-lg-3">
+                <div class="card border-secondary rounded-top">
+                    <div class="card-header bg-secondary text-white">Search for Gifs</div>
+                    <div class="card-body">
+                        <form class="form-inline">
+                            <div class="form-group">
+                                <label for="button-input" class="sr-only">Game Name</label>
+                                <input type="text" id="search-term" placeholder="Add a Nintendo Game" />
+                                <button type="button" id="add-term-button" class="btn btn-secondary">Add</button>
+                            </div>
+                        </form>
+                        <div id="gif-buttons" class="mx-auto mb-4"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-9 mt-sm-3">
+                <div class="card border-primary rounded-top invisible" id="results-section">
+                    <div class="card-header bg-primary text-white">&nbsp;</div>
+                    <div id="gif-template" hidden>
+                        <div class="col-lg-2">
+                            <div class="card">
+                                <div class="card-header">Rating: {rating}</div>
+                                <div class="card-body">
+                                    {source}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="gif-results" class="card-body"></div>
+                </div>
+            </div>
+        </div>
+    </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="assets/javascript/app.js"></script>
 </body>
 </html>
