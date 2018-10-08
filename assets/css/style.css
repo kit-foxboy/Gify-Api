@@ -1,0 +1,10 @@
+#search-term {
+    max-width: 150px;
+    font-size: .75rem;
+}
+
+@media (max-width: 575px) {
+    .xs {
+        margin-top: 1rem !important;
+    }
+}
