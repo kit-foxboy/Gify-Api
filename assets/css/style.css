@@ -1,3 +1,37 @@
+.bg {
+    background-image: url('../images/nintendo-bg.png');
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+}
+
+.bg-primary {
+    background-color: #83301f !important;
+}
+
+.border-primary {
+    border-color: #83301f !important;
+}
+
+.bg-secondary {
+    background-color: #e8c33f !important;
+}
+
+.border-secondary {
+    border-color: #e8c33f !important;
+}
+
+.btn-primary {
+    background-color: #e8c33f !important;
+    border-color: #e8c33f !important;
+}
+
+.btn-primary:hover {
+    background-color: #83301f !important;
+    border-color: #83301f !important;
+}
+
 #search-term {
     max-width: 150px;
     font-size: .75rem;
